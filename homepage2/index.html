@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Private Banking | Wealth Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="corp-body">
+    <header class="corp-header">
+        <div class="container header-inner">
+            <a href="index.html">
+                <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo">
+            </a>
+            <nav class="corp-nav">
+                <ul>
+                    <div class="home-nav">
+                        <a href="index.html" class="home-btn nav-link" style="color:var(--gold)">Home</a>
+
+                        <span class="material-icons dropdown-icon" id="homeDropdownBtn">
+                            expand_more
+                        </span>
+
+                        <div class="home-select " id="homeDropdown">
+                            <a href="../index.html" class="nav-link">Home Page 1</a>
+                        </div>
+                    </div>
+                    <li><a href="wealth.html">Wealth</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="lending.html">Lending</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="client-login.html" class="btn-corp-outline">Client Login</a>
+            </div>
+
+            <div class="corp-hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+
+            <div class="corp-mobile-menu">
+                <div class="corp-close-btn">
+                    <span class="material-icons">close</span>
+                </div>
+
+                <ul class="corp-mobile-links">
+                    <li><a href="index.html" style="color:var(--gold)">Home</a></li>
+                    <li><a href="wealth.html">Wealth</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="lending.html">Lending</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <a href="client-login.html" class="btn-corp-outline mobile-login-btn">Client Login</a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="corp-hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content" data-aos="fade-up">
+                <span class="hero-subtitle">Est. 1924</span>
+                <h1>Preserving Wealth across <br><em>Generations.</em></h1>
+                <p>Bespoke financial strategies for ultra-high-net-worth individuals, families, and corporations. Your
+                    legacy is our priority.</p>
+                <div class="hero-cta" data-aos="fade-down">
+                    <a href="contact.html" class="btn-corp">Become a Client</a>
+                    <a href="#services" class="link-gold">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="market-ticker">
+            <div class="ticker-wrap">
+                <div class="ticker-move">
+                    <div class="ticker-item"><span>S&P 500</span> <strong>4,450.32</strong> <span class="up">▲
+                            0.45%</span></div>
+                    <div class="ticker-item"><span>NASDAQ</span> <strong>13,890.15</strong> <span class="up">▲
+                            1.20%</span></div>
+                    <div class="ticker-item"><span>FTSE 100</span> <strong>7,650.10</strong> <span class="down">▼
+                            0.12%</span></div>
+                    <div class="ticker-item"><span>GOLD</span> <strong>1,940.50</strong> <span class="up">▲ 0.05%</span>
+                    </div>
+                    <div class="ticker-item"><span>EUR/USD</span> <strong>1.0845</strong> <span class="flat">−
+                            0.00%</span></div>
+                    <div class="ticker-item"><span>BTC/USD</span> <strong>42,150.00</strong> <span class="up">▲
+                            1.50%</span></div>
+                    <div class="ticker-item"><span>S&P 500</span> <strong>4,450.32</strong> <span class="up">▲
+                            0.45%</span></div>
+                    <div class="ticker-item"><span>NASDAQ</span> <strong>13,890.15</strong> <span class="up">▲
+                            1.20%</span></div>
+                    <div class="ticker-item"><span>FTSE 100</span> <strong>7,650.10</strong> <span class="down">▼
+                            0.12%</span></div>
+                    <div class="ticker-item"><span>GOLD</span> <strong>1,940.50</strong> <span class="up">▲ 0.05%</span>
+                    </div>
+                    <div class="ticker-item"><span>EUR/USD</span> <strong>1.0845</strong> <span class="flat">−
+                            0.00%</span></div>
+                    <div class="ticker-item"><span>BTC/USD</span> <strong>42,150.00</strong> <span class="up">▲
+                            1.50%</span></div>
+                </div>
+            </div>
+        </div>
+        <section class="section-padding corp-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                        <span class="stat-num">$450B+</span>
+                        <span class="stat-label">Assets Under Management</span>
+                    </div>
+                    <div class="stat-border"></div>
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                        <span class="stat-num">40+</span>
+                        <span class="stat-label">Global Offices</span>
+                    </div>
+                    <div class="stat-border"></div>
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                        <span class="stat-num">100 Years</span>
+                        <span class="stat-label">Of Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-cream" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="gold-line"></span>
+                    <h2>Our Expertise</h2>
+                    <p>Comprehensive solutions tailored to your complex financial needs.</p>
+                </div>
+
+                <div class="corp-services-grid">
+                    <div class="service-item">
+                        <div class="srv-img" data-aos="fade-down">
+                            <img src="./assets/home-imgq.webp" alt="Wealth">
+                        </div>
+                        <div class="srv-text" data-aos="fade-up">
+                            <h3>Private Wealth</h3>
+                            <p>Investment management, trust & estate planning, and philanthropic advisory for families.
+                            </p>
+                            <a href="404Page.html" class="read-more">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="srv-img" data-aos="fade-up">
+                            <img src="./assets/home-img2.webp" alt="Corporate">
+                        </div>
+                        <div class="srv-text" data-aos="fade-down">
+                            <h3>Corporate Banking</h3>
+                            <p>Strategic financing, M&A advisory, and liquidity management solutions for global
+                                enterprises.</p>
+                            <a href="404Page.html" class="read-more">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="srv-img" data-aos="fade-down">
+                            <img src="./assets/home-img3.webp" alt="Markets">
+                        </div>
+                        <div class="srv-text" data-aos="fade-up">
+                            <h3>Global Markets</h3>
+                            <p>Access to equities, fixed income, currencies, and commodities across 50+ exchanges.</p>
+                            <a href="404Page.html" class="read-more">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding corp-network">
+            <div class="container split-layout">
+                <div class="insight-text" data-aos="fade-up">
+                    <span class="tag-gold">Global Access</span>
+                    <h2 style="color:white">A Network Without Borders.</h2>
+                    <p>In an interconnected world, your bank must be everywhere you are. From the trading floors of New
+                        York to the emerging markets of Asia, our 40+ offices provide on-the-ground intelligence and
+                        cross-border capabilities.</p>
+                    <ul class="network-list">
+                        <li><strong>Tamil Nadu:</strong> <i>Salem</i>, Coimbatore, Chennai</li>
+                        <li><strong>Karnataka:</strong>Bengaluru</li>
+                        <li><strong>Andhra Pradesh:</strong>Andhra</li>
+                    </ul>
+                </div>
+                <div class="insight-visual" data-aos="fade-down">
+                    <div class="map-graphic">
+                        <img src="./assets/world.webp" alt="World Map" style="opacity:0.6; mix-blend-mode: luminosity;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-padding corp-insight">
+            <div class="container split-layout">
+                <div class="insight-text" data-aos="fade-down">
+                    <span class="tag-gold">Market Outlook 2025</span>
+                    <h2>"Resilience in a changing economy."</h2>
+                    <p>Our Chief Investment Officer discusses the opportunities in emerging markets and the shift
+                        towards sustainable energy portfolios. Discover how we are positioning our clients for the
+                        decade ahead.</p>
+                    <!-- <a href="" class="btn-corp">Read the Report</a> -->
+                </div>
+                <div class="insight-visual" data-aos="fade-up">
+                    <div class="chart-mockup">
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 50%"></div>
+                        <div class="bar" style="height: 80%"></div>
+                        <div class="bar active" style="height: 95%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-cream">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="gold-line"></span>
+                    <h2>Our Leadership</h2>
+                    <p>Guided by decades of experience in global finance.</p>
+                </div>
+
+                <div class="leadership-grid">
+                    <div class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./assets/about-team1.webp" alt="CEO">
+                        <h4>James Sterling</h4>
+                        <span>Global CEO</span>
+                    </div>
+                    <div class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./assets/about-team4.webp" alt="CFO">
+                        <h4>Eleanor Vance</h4>
+                        <span>Chief Investment Officer</span>
+                    </div>
+                    <div class="leader-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./assets/about-team2.webp" alt="MD">
+                        <h4>Robert Chen</h4>
+                        <span>Head of Private Wealth</span>
+                    </div>
+                    <div class="leader-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="./assets/about-team4.webp" alt="VP">
+                        <h4>Sarah Al-Fayed</h4>
+                        <span>MD, EMEA Region</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-padding corp-esg">
+            <div class="container text-center" data-aos="zoom-in">
+                <h2 style="color:white; margin-bottom:20px;">Investing for Impact.</h2>
+                <p style="color:#CBD5E1; max-width:700px; margin:0 auto 40px; font-size:18px;">
+                    We are committed to sustainable finance. Last year, we directed over $50B into renewable energy and
+                    social impact bonds. Align your portfolio with your values.
+                </p>
+                <div class="esg-badges">
+                    <span class="esg-tag">Net Zero 2030</span>
+                    <span class="esg-tag">ESG Integration</span>
+                    <span class="esg-tag">Impact Advisory</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="corp-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="brand-col" data-aos="fade" data-aos-delay="100">
+                    <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo">
+                    <p style="text-indent: 25px;">SA • CBE • BAN • CHE</p>
+                    <div class="social-links">
+                        <a href="404page.html"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group" data-aos="fade" data-aos-delay="200">
+                    <h5>Expertise</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                        <li><a href="investment.html">Investment Banking</a></li>
+                        <li><a href="lending.html">Corporate Lending</a></li>
+                        <li><a href="insights.html">Market Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group" data-aos="fade" data-aos-delay="300">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="404Page.html">About Us</a></li>
+                        <li><a href="404Page.html">Careers</a></li>
+                        <li><a href="404Page.html">Investor Relations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group" data-aos="fade" data-aos-delay="400">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="404Page.html">Privacy Policy</a></li>
+                        <li><a href="404Page.html">Terms of Use</a></li>
+                        <li><a href="404Page.html">Regulatory Disclosures</a></li>
+                        <li><a href="contact.html">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>© 2025 Stackly Banking Group. All rights reserved. Member FDIC. Equal Housing Lender.</p>
+
+                    <p class="disclaimer">
+                        Investing involves risk, including the possible loss of principal. Past performance does not
+                        guarantee future results.
+                        Asset allocation and diversification do not ensure a profit or protect against loss.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true, duration: 800, easing: 'ease-out' });
+        const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+        const homeDropdown = document.getElementById("homeDropdown");
+        const icon = document.querySelector(".dropdown-icon");
+
+        homeDropdownBtn.addEventListener("click", () => {
+            homeDropdown.classList.toggle("show");
+            icon.classList.toggle("rotate");
+        });
+        document.addEventListener("click", (e) => {
+            if (!homeDropdown.contains(e.target) && !homeDropdownBtn.contains(e.target)) {
+                homeDropdown.classList.remove("show");
+                icon.classList.remove("rotate");
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Banking for the Future</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="retail-nav">
+        <div class="container nav-inner">
+            <a href="index.html"> <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo"></a>
+            <ul class="nav-links">
+                <div class="home-nav">
+                    <a href="index.html" class="home-btn nav-link">Home</a>
+
+                    <span class="material-icons dropdown-icon" id="homeDropdownBtn">
+                        expand_more
+                    </span>
+
+                    <div class="home-select " id="homeDropdown">
+                        <a href="./homepage2/index.html" class="nav-link">Home Page 2</a>
+                    </div>
+                </div>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <div class="mobile-nav-actions">
+                    <a href="login.html" class="link-login">Log In</a>
+                    <a href="register.html" class="btn btn-primary">Open Account</a>
+                </div>
+                <div class="btn-close"><span class="material-icons">close</span></div>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="link-login">Log In</a>
+                <a href="register.html" class="btn btn-primary">Open Account</a>
+            </div>
+            <div class="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </nav>
+    <header class="retail-hero">
+        <div class="container hero-grid">
+
+            <div class="hero-text">
+                <div class="badge-new">🚀 Banking v2.0 is here</div>
+                <h1 data-aos="fade">Banking that moves as fast as <span class="gradient-text">you do.</span></h1>
+                <p data-aos="fade" data-aos-delay="200">No hidden fees. Instant transfers. A card that glows in the
+                    dark. Experience the financial freedom
+                    you deserve today.</p>
+
+                <div class="hero-btns" data-aos="fade-up">
+                    <a href="register.html" class="btn btn-primary">Get Started</a>
+                    <a href="dashboard.html" class="btn btn-outline">View Demo</a>
+                </div>
+
+                <div class="trust-row" data-aos="fade-down">
+                    <div class="avatars">
+                        <span class="av" style="background:#FFD166"><img src="./assets/person1.webp" alt="person 1">
+                        </span>
+                        <span class="av" style="background:#06D6A0"><img src="./assets/person2.webp"
+                                alt="person 1"></span>
+                        <span class="av" style="background:#118AB2"><img src="./assets/person3.webp"
+                                alt="person 1"></span>
+                    </div>
+                    <span>Trusted by <strong>2M+ users</strong> worldwide</span>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="zoom-in">
+                <div class="card-float card-front">
+                    <div class="card-chip"></div>
+                    <div class="card-wifi">))))</div>
+                    <div class="card-number">4000 1234 5678 9010</div>
+                    <div class="card-bottom">
+                        <span class="card-name">ALEX MORGAN</span>
+                        <span class="card-expiry">12/28</span>
+                    </div>
+                    <div class="card-logo">Stackly</div>
+                </div>
+
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+
+                <div class="float-bubble b1">💸 $500 Received</div>
+                <div class="float-bubble b2">🍕 Split Bill</div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="section-padding features-section">
+        <div class="container">
+            <div class="text-center mb-40">
+                <h2 style="font-size: 36px; margin-bottom: 10px;">One app, <span class="highlight">all your
+                        money.</span></h2>
+                <p style="color:var(--text-gray);">Manage spending, savings, and investments in one place.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">⚡</div>
+                    <h3>Instant Transfers</h3>
+                    <p>Send money to friends instantly, even if they don't use Stackly. No waiting days for funds to
+                        clear.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">🛡️</div>
+                    <h3>Vault Security</h3>
+                    <p>Lock your card instantly from the app if you lose it. Set monthly spending limits in seconds.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">📈</div>
+                    <h3>Smart Analytics</h3>
+                    <p>See exactly where your money goes. We auto-categorize your spending so you can budget better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding showcase-section">
+        <div class="container">
+            <div class="split-layout">
+                <div class="split-img" data-aos="fade-down">
+                    <img src="./assets/home-banking.webp" alt="Mobile Payment" class="rounded-img">
+                    <div class="float-badge badge-right">
+                        <span>Success!</span>
+                        <strong>Payment Sent</strong>
+                    </div>
+                </div>
+                <div class="split-text" data-aos="fade-up">
+                    <span class="small-tag">Contactless</span>
+                    <h2>Pay with your phone.<br>Anywhere. Anytime.</h2>
+                    <p>Leave your wallet at home. Stackly works with Apple Pay and Google Pay instantly. Just tap and
+                        go.
+                    </p>
+                    <ul class="check-list">
+                        <li>✅ Works at 50M+ locations</li>
+                        <li>✅ Biometric security protection</li>
+                        <li>✅ Instant transaction notifications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding steps-section">
+        <div class="container">
+            <div class="text-center mb-40">
+                <h2>Get started in <span class="highlight">3 minutes</span></h2>
+                <p>No paperwork. No branch visits. Just download and go.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card" data-aos="fade-down" data-aos-delay="100">
+                    <div class="step-num">01</div>
+                    <h3>Download App</h3>
+                    <p>Get the Stackly app for iOS or Android from the store.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card" data-aos="fade-down" data-aos-delay="200">
+                    <div class="step-num">02</div>
+                    <h3>Verify Identity</h3>
+                    <p>Take a selfie and scan your ID. We verify you instantly.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card" data-aos="fade-down" data-aos-delay="200">
+                    <div class="step-num">03</div>
+                    <h3>Add Funds</h3>
+                    <p>Link your old bank account and transfer funds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding showcase-section bg-light">
+        <div class="container">
+            <div class="split-layout reverse">
+                <div class="split-img" data-aos="fade-up">
+                    <img src="./assets/home-banking1.webp" alt="Travel" class="rounded-img">
+                    <div class="float-badge badge-left">
+                        <span>Exchange Rate</span>
+                        <strong>1 USD = 0.92 EUR</strong>
+                    </div>
+                </div>
+                <div class="split-text" data-aos="fade-down">
+                    <span class="small-tag">Global Travel</span>
+                    <h2>Spend abroad with <br>Zero Hidden Fees.</h2>
+                    <p>Stop paying banks to spend your own money. With Stackly, you get the real exchange rate, every
+                        time.
+                    </p>
+                    <a href="plans.html" class="btn btn-outline">See our Exchange Rates</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding reviews-section">
+        <div class="container">
+            <div class="text-center mb-50">
+                <h2>Loved by <span class="highlight">2 Million+</span> people</h2>
+                <p style="color:var(--text-gray);">Don't just take our word for it. See what our users say.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card" data-aos="fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"I stopped using my old bank completely. The instant notifications and
+                        budgeting tools are a game changer for my finances."</p>
+                    <div class="reviewer">
+                        <div class="av" style="background:#FFD166"><img src="./assets/person1.webp" alt="person 1">
+                        </div>
+                        <div class="reviewer-info">
+                            <strong>Sarah J.</strong>
+                            <span>Freelancer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" data-aos="fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Sending money to my family abroad used to cost me $30 per transfer. With
+                        Stackly, it's free and instant. Absolutely love it."</p>
+                    <div class="reviewer">
+                        <div class="av" style="background:#06D6A0"><img src="./assets/person3.webp" alt="person 1">
+                        </div>
+                        <div class="reviewer-info">
+                            <strong>David Chen</strong>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-aos="fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The metal card looks amazing, but the customer support is the real winner.
+                        They resolved my issue in 2 minutes via chat."</p>
+                    <div class="reviewer">
+                        <div class="av" style="background:#118AB2"><img src="./assets/person2.webp" alt="person 1">
+                        </div>
+                        <div class="reviewer-info">
+                            <strong>Emily R.</strong>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding faq-section" data-aos="fade-down">
+        <div class="container small-container">
+            <div class="text-center mb-50">
+                <h2>Got Questions?</h2>
+                <p style="color:var(--text-gray);">We have answers.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is Stackly Bank a real bank?
+                        <span class="plus-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Stackly is a financial technology company, not a bank. Banking services are provided by our
+                            partner banks, Members FDIC. Your funds are insured up to $250,000.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are there any monthly fees?
+                        <span class="plus-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our Standard plan is $0/month. We also offer Plus ($5/mo) and Metal ($15/mo) plans with extra
+                            perks like travel insurance and higher interest rates.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I use my card abroad?
+                        <span class="plus-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can spend abroad in over 150 currencies with the real interbank exchange rate and no
+                            hidden markup fees.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I open an account?
+                        <span class="plus-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Download the Stackly app, enter your details, verify your identity with a photo ID, and
+                            you're
+                            ready to go in about 3 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section" data-aos="zoom-in">
+        <div class="container text-center">
+            <h2>Ready to upgrade your wallet?</h2>
+            <p>Join 2 million users saving money today.</p>
+            <div class="app-buttons">
+                <a href="404page.html" class="btn-store"><i class="fab fa-apple fa-2x"></i>
+                    App Store</a>
+                <a href="404page.html" class="btn-store"><i class="fab fa-google-play fa-2x"></i>
+                    Google Play</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="retail-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand" data-aos="fade-up" data-aos-delay="100">
+                    <a href="index.html"> <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo"></a>
+                    <p>Making money simple, fast, and transparent for everyone.</p>
+                    <div class="social-links">
+                        <a href="404page.html"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="plans.html">Plan</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="404page.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="404page.html">Security</a></li>
+                        <li><a href="404page.html">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Legel</h4>
+                    <ul>
+                        <li> <a href="404page.html">Privacy Policy</a> </li>
+                        <li><a href="404page.html">Terms of Service</a></li>
+                        <li><a href="404page.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stackly. Regulated by the Financial Authority.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, offset: 50, once: true });
+        const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+        const homeDropdown = document.getElementById("homeDropdown");
+        const icon = document.querySelector(".dropdown-icon");
+
+        homeDropdownBtn.addEventListener("click", () => {
+            homeDropdown.classList.toggle("show");
+            icon.classList.toggle("rotate");
+        });
+        document.addEventListener("click", (e) => {
+            if (!homeDropdown.contains(e.target) && !homeDropdownBtn.contains(e.target)) {
+                homeDropdown.classList.remove("show");
+                icon.classList.remove("rotate");
+            }
+        });
+    </script>
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+
+                const answer = question.nextElementSibling;
+                if (question.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.maxHeight = 0;
+                }
+
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== question && otherQuestion.classList.contains('active')) {
+                        otherQuestion.classList.remove('active');
+                        otherQuestion.nextElementSibling.style.maxHeight = 0;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

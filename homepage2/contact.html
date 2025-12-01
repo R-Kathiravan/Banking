@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Stackly Private</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="corp-body">
+    <header class="corp-header">
+        <div class="container header-inner">
+            <a href="index.html">
+                <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo">
+            </a>
+            <nav class="corp-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wealth.html">Wealth</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="lending.html">Lending</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html" style="color:var(--gold)">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="client-login.html" class="btn-corp-outline">Client Login</a>
+            </div>
+
+            <div class="corp-hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+
+            <div class="corp-mobile-menu">
+                <div class="corp-close-btn">
+                    <span class="material-icons">close</span>
+                </div>
+
+                <ul class="corp-mobile-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wealth.html">Wealth</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="lending.html">Lending</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html" style="color:var(--gold)">Contact</a></li>
+                    <a href="client-login.html" class="btn-corp-outline mobile-login-btn">Client Login</a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <div class="split-layout" style="align-items: flex-start;">
+
+                    <div class="insight-text" style="color:var(--navy);" data-aos="fade-up">
+                        <span class="gold-line" style="margin:0 0 20px;"></span>
+                        <h1 style="font-size:48px; margin-bottom:30px;">Get in Touch</h1>
+                        <p style="color:var(--text-light); margin-bottom:40px; font-size:18px;">
+                            For prospective clients, please use the form or contact our headquarters directly. Existing
+                            clients should contact their Relationship Manager.
+                        </p>
+
+                        <div style="margin-bottom:30px;" data-aos="fade-down">
+                            <h4 style="font-family:var(--font-serif); font-size:20px; margin-bottom:10px;">Headquarters
+                            </h4>
+                            <p style="color:var(--text-light);">
+                                MMR Complex, Chinna
+                                Thirupathi,<br>
+                                near Chinna Muniyappan Kovil,<br>
+                                Salem, Tamil Nadu 636008
+                            </p>
+                        </div>
+
+                        <div data-aos="fade-down">
+                            <h4 style="font-family:var(--font-serif); font-size:20px; margin-bottom:10px;">Direct Line
+                            </h4>
+                            <p style="color:var(--text-light);">+91 9876543210</p>
+                            <p style="color:var(--text-light);">info@thestackly.com</p>
+                        </div>
+                    </div>
+                    <div class="insight-visual" style="height:auto; display:block; width:100%;" data-aos="zoom-in">
+                        <form id="corpInquiryForm" style="background:#F9FAFB; padding:40px; border:1px solid #E5E7EB;">
+
+                            <div class="corp-input-group" style="margin-bottom:20px;">
+                                <label
+                                    style="display:block; font-size:12px; font-weight:600; text-transform:uppercase; margin-bottom:8px;">
+                                    Full Name
+                                </label>
+                                <input type="text" id="fullName"
+                                    style="width:100%; padding:12px; border:1px solid #D1D5DB; background:white;"
+                                    placeholder="John Doe">
+                                <small class="error-msg" id="nameError"
+                                    style="color:red; display:none; font-size:13px;"></small>
+                            </div>
+
+                            <div class="corp-input-group" style="margin-bottom:20px;">
+                                <label
+                                    style="display:block; font-size:12px; font-weight:600; text-transform:uppercase; margin-bottom:8px;">
+                                    Business Email
+                                </label>
+                                <input type="email" id="businessEmail"
+                                    style="width:100%; padding:12px; border:1px solid #D1D5DB; background:white;"
+                                    placeholder="name@company.com">
+                                <small class="error-msg" id="emailError2"
+                                    style="color:red; display:none; font-size:13px;"></small>
+                            </div>
+
+                            <div class="corp-input-group" style="margin-bottom:20px;">
+                                <label
+                                    style="display:block; font-size:12px; font-weight:600; text-transform:uppercase; margin-bottom:8px;">
+                                    Area of Interest
+                                </label>
+                                <select id="interest"
+                                    style="width:100%; padding:12px; border:1px solid #D1D5DB; background:white;">
+                                    <option value="">Select an option</option>
+                                    <option value="Wealth Management">Wealth Management</option>
+                                    <option value="Corporate Advisory">Corporate Advisory</option>
+                                    <option value="Family Office">Family Office</option>
+                                </select>
+                                <small class="error-msg" id="interestError"
+                                    style="color:red; display:none; font-size:13px;"></small>
+                            </div>
+
+                            <div class="corp-input-group" style="margin-bottom:30px;">
+                                <label
+                                    style="display:block; font-size:12px; font-weight:600; text-transform:uppercase; margin-bottom:8px;">
+                                    Message
+                                </label>
+                                <textarea id="message" rows="4"
+                                    style="width:100%; padding:12px; border:1px solid #D1D5DB; background:white;"></textarea>
+                                <small class="error-msg" id="messageError"
+                                    style="color:red; display:none; font-size:13px;"></small>
+                            </div>
+
+                            <button class="btn-corp" style="width:100%;">Send Inquiry</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="corp-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="brand-col" data-aos="fade" data-aos-delay="100">
+                    <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo">
+                    <p style="text-indent: 25px;">SA • CBE • BAN • CHE</p>
+                    <div class="social-links">
+                        <a href="404page.html"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group" data-aos="fade" data-aos-delay="200">
+                    <h5>Expertise</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                        <li><a href="investment.html">Investment Banking</a></li>
+                        <li><a href="lending.html">Corporate Lending</a></li>
+                        <li><a href="insights.html">Market Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group" data-aos="fade" data-aos-delay="300">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="404Page.html">About Us</a></li>
+                        <li><a href="404Page.html">Careers</a></li>
+                        <li><a href="404Page.html">Investor Relations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group" data-aos="fade" data-aos-delay="400">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="404Page.html">Privacy Policy</a></li>
+                        <li><a href="404Page.html">Terms of Use</a></li>
+                        <li><a href="404Page.html">Regulatory Disclosures</a></li>
+                        <li><a href="contact.html">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>© 2025 Stackly Banking Group. All rights reserved. Member FDIC. Equal Housing Lender.</p>
+
+                    <p class="disclaimer">
+                        Investing involves risk, including the possible loss of principal. Past performance does not
+                        guarantee future results.
+                        Asset allocation and diversification do not ensure a profit or protect against loss.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true, duration: 800, easing: 'ease-out' });</script>
+    <script>
+        document.getElementById("corpInquiryForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let isValid = true;
+
+            const fullName = document.getElementById("fullName");
+            const email = document.getElementById("businessEmail");
+            const interest = document.getElementById("interest");
+            const message = document.getElementById("message");
+
+            const nameError = document.getElementById("nameError");
+            const emailError = document.getElementById("emailError2");
+            const interestError = document.getElementById("interestError");
+            const messageError = document.getElementById("messageError");
+
+            document.querySelectorAll(".error-msg").forEach(el => el.style.display = "none");
+            [fullName, email, interest, message].forEach(el => el.style.borderColor = "#D1D5DB");
+
+            if (fullName.value.trim().length < 3) {
+                nameError.textContent = "Please enter your full name.";
+                nameError.style.display = "block";
+                fullName.style.borderColor = "red";
+                isValid = false;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (email.value.trim() === "") {
+                emailError.textContent = "Email is required.";
+                emailError.style.display = "block";
+                email.style.borderColor = "red";
+                isValid = false;
+            } else if (!emailPattern.test(email.value.trim())) {
+                emailError.textContent = "Please enter a valid business email.";
+                emailError.style.display = "block";
+                email.style.borderColor = "red";
+                isValid = false;
+            }
+
+            if (interest.value === "") {
+                interestError.textContent = "Please select an area of interest.";
+                interestError.style.display = "block";
+                interest.style.borderColor = "red";
+                isValid = false;
+            }
+
+            if (message.value.trim().length < 10) {
+                messageError.textContent = "Please enter at least 10 characters.";
+                messageError.style.display = "block";
+                message.style.borderColor = "red";
+                isValid = false;
+            }
+
+            if (isValid) {
+                // alert("Inquiry Sent Successfully!");
+                window.location.href = '404Page.html'
+                fullName.value = "";
+                email.value = "";
+                interest.value = "";
+                message.value = "";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

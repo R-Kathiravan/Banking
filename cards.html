@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cards | Stackly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="app-sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo">Nova<span class="dot">.</span></a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html"><span class="icon">🏠</span> Dashboard</a></li>
+                    <li><a href="cards.html" class="active"><span class="icon">💳</span> My Cards</a></li>
+                    <li><a href="404page.html"><span class="icon">📊</span> Analytics</a></li>
+                    <li><a href="404page.html"><span class="icon">💸</span> Payments</a></li>
+                    <li><a href="404page.html"><span class="icon">⚙️</span> Settings</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-link"><span class="icon">🚪</span> Log Out</a>
+            </div>
+        </aside>
+
+        <main class="app-content">
+
+            <header class="app-header">
+                <h1 class="page-title">Manage Cards</h1>
+                <button class="btn btn-primary btn-sm">+ New Card</button>
+            </header>
+
+            <div class="cards-layout">
+
+                <div class="card-preview-section">
+                    <div class="card-float card-front" style="position:relative; transform:none; margin: 0 auto;">
+                        <div class="card-chip"></div>
+                        <div class="card-wifi">))))</div>
+                        <div class="card-number">4000 1234 5678 9010</div>
+                        <div class="card-bottom">
+                            <span class="card-name">ALEX MORGAN</span>
+                            <span class="card-expiry">12/28</span>
+                        </div>
+                        <div class="card-logo">Nova.</div>
+                    </div>
+
+                    <div class="card-tabs">
+                        <button class="tab active">Physical Card</button>
+                        <button class="tab">Virtual Card</button>
+                    </div>
+                </div>
+
+                <div class="card-settings-section">
+                    <div class="section-box">
+                        <h3>Card Controls</h3>
+
+                        <div class="control-item">
+                            <div class="control-info">
+                                <strong>Freeze Card</strong>
+                                <p>Temporarily disable this card.</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="control-item">
+                            <div class="control-info">
+                                <strong>Online Payments</strong>
+                                <p>Allow purchases on the internet.</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="control-item">
+                            <div class="control-info">
+                                <strong>Contactless</strong>
+                                <p>Tap to pay in stores.</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="section-box">
+                        <h3>Spending Limit</h3>
+                        <div class="limit-slider-box">
+                            <div class="limit-header">
+                                <span>Monthly Limit</span>
+                                <strong>$5,000</strong>
+                            </div>
+                            <input type="range" min="100" max="10000" value="5000" class="range-slider">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

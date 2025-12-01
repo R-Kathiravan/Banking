@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Stackly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="retail-nav">
+        <div class="container nav-inner">
+            <a href="index.html"> <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <div class="mobile-nav-actions">
+                    <a href="login.html" class="link-login">Log In</a>
+                    <a href="register.html" class="btn btn-primary">Open Account</a>
+                </div>
+                <div class="btn-close"><span class="material-icons">close</span></div>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="link-login">Log In</a>
+                <a href="register.html" class="btn btn-primary">Open Account</a>
+            </div>
+            <div class="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="auth-layout">
+        <div class="auth-form-side">
+
+            <div class="auth-content">
+                <h1>Welcome back</h1>
+                <p>Please enter your details to access your account.</p>
+
+                <form id="loginForm" onsubmit="handleLogin(event)" novalidate>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="name@email.com">
+                        <div class="error-msg" id="email-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="••••••••">
+                        <!-- <a href="#" class="forgot-pass">Forgot password?</a> -->
+                        <div class="error-msg" id="pass-error"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+
+                    <div class="auth-divider">
+                        <span>or sign in with</span>
+                    </div>
+
+                    <div class="social-btns">
+                        <a href="404page.html" type="button" class="btn-social">
+                            <i class="fa-brands fa-google" style="color: #ff0000;"></i> Google
+                        </a>
+                        <a href="404page.html" type="button" class="btn-social">
+                            <i class="fab fa-apple fa-2x"></i>
+                            Apple
+                        </a>
+                    </div>
+                </form>
+
+                <p class="auth-footer">
+                    Don't have an account? <a href="register.html">Sign up for free</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="auth-visual-side">
+            <div class="visual-content">
+                <div class="glass-card">
+                    <div class="icon-box">🎉</div>
+                    <h3>Your money is growing.</h3>
+                    <p>You earned <strong>$42.50</strong> in cashback this month.</p>
+                </div>
+                <div class="auth-blob"></div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="retail-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand" data-aos="fade-up" data-aos-delay="100">
+                    <a href="index.html"> <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo"></a>
+                    <p>Making money simple, fast, and transparent for everyone.</p>
+                    <div class="social-links">
+                        <a href="404page.html"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="plans.html">Plan</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="404page.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="404page.html">Security</a></li>
+                        <li><a href="404page.html">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Legel</h4>
+                    <ul>
+                        <li> <a href="404page.html">Privacy Policy</a> </li>
+                        <li><a href="404page.html">Terms of Service</a></li>
+                        <li><a href="404page.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stackly. Regulated by the Financial Authority.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, offset: 50, once: true });
+    </script>
+    <script>
+        function handleLogin(e) {
+            e.preventDefault();
+
+            const emailInput = document.getElementById('email');
+            const passInput = document.getElementById('password');
+            const emailError = document.getElementById('email-error');
+            const passError = document.getElementById('pass-error');
+            const btn = e.target.querySelector('button[type="submit"]');
+
+            resetError(emailInput, emailError);
+            resetError(passInput, passError);
+
+            let isValid = true;
+
+            const emailValue = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailValue) {
+                showError(emailInput, emailError, "Email address is required");
+                isValid = false;
+            } else if (!emailRegex.test(emailValue)) {
+                showError(emailInput, emailError, "Please enter a valid email address");
+                isValid = false;
+            }
+
+            if (!passInput.value) {
+                showError(passInput, passError, "Password is required");
+                isValid = false;
+            }
+
+            if (isValid) {
+                const originalText = btn.innerText;
+                btn.innerText = "Verifying...";
+                btn.style.opacity = "0.7";
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    window.location.href = '404page.html';
+                }, 1500);
+            }
+        }
+
+        function showError(input, msgElement, message) {
+            input.classList.add('error');
+            msgElement.innerText = message;
+            msgElement.style.display = 'block';
+        }
+
+        function resetError(input, msgElement) {
+            input.classList.remove('error');
+            msgElement.style.display = 'none';
+            msgElement.innerText = '';
+        }
+    </script>
+</body>
+
+</html>

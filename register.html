@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Stackly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="retail-nav">
+        <div class="container nav-inner">
+            <a href="index.html"> <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <div class="mobile-nav-actions">
+                    <a href="login.html" class="link-login">Log In</a>
+                    <a href="register.html" class="btn btn-primary">Open Account</a>
+                </div>
+                <div class="btn-close"><span class="material-icons">close</span></div>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="link-login">Log In</a>
+                <a href="register.html" class="btn btn-primary">Open Account</a>
+            </div>
+            <div class="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="auth-layout" style="flex-direction: row-reverse;">
+
+        <div class="auth-form-side">
+            <div class="auth-content">
+                <h1>Create Account</h1>
+                <p>Start your financial journey in minutes.</p>
+
+                <form id="signupForm" onsubmit="handleSignup(event)" novalidate>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="fullname" class="form-input" placeholder="John Doe">
+                        <div class="error-msg" id="name-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="name@email.com">
+                        <div class="error-msg" id="email-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="password" class="form-input"
+                            placeholder="Create a password (min 8 chars)">
+                        <div class="error-msg" id="pass-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" id="confirm-password" class="form-input" placeholder="Repeat password">
+                        <div class="error-msg" id="confirm-error"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Get Started</button>
+
+                    <div class="auth-divider">
+                        <span>or sign up with</span>
+                    </div>
+
+                    <div class="social-btns">
+                        <a href="404page.html" type="button" class="btn-social">
+                            <i class="fa-brands fa-google" style="color: #ff0000;"></i> Google
+                        </a>
+                        <a href="404page.html" type="button" class="btn-social">
+                            <i class="fab fa-apple fa-2x"></i>
+                            Apple
+                        </a>
+                    </div>
+                </form>
+
+                <p class="auth-footer">
+                    Already have an account? <a href="login.html">Log in</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="auth-visual-side">
+            <div class="visual-content">
+                <div class="glass-card">
+                    <div class="icon-box">🚀</div>
+                    <h3>Banking without borders.</h3>
+                    <p>Join over 2 million users saving money on global fees.</p>
+                </div>
+                <div class="auth-blob"></div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="retail-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand" data-aos="fade-up" data-aos-delay="100">
+                    <a href="index.html"> <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo"></a>
+                    <p>Making money simple, fast, and transparent for everyone.</p>
+                    <div class="social-links">
+                        <a href="404page.html"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="plans.html">Plan</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="404page.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="404page.html">Security</a></li>
+                        <li><a href="404page.html">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Legel</h4>
+                    <ul>
+                        <li> <a href="404page.html">Privacy Policy</a> </li>
+                        <li><a href="404page.html">Terms of Service</a></li>
+                        <li><a href="404page.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stackly. Regulated by the Financial Authority.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, offset: 50, once: true });
+    </script>
+    <script>
+        function handleSignup(e) {
+            e.preventDefault();
+
+            const nameInput = document.getElementById('fullname');
+            const emailInput = document.getElementById('email');
+            const passInput = document.getElementById('password');
+            const confirmInput = document.getElementById('confirm-password');
+
+            const nameError = document.getElementById('name-error');
+            const emailError = document.getElementById('email-error');
+            const passError = document.getElementById('pass-error');
+            const confirmError = document.getElementById('confirm-error');
+
+            const btn = e.target.querySelector('button[type="submit"]');
+
+            [nameInput, emailInput, passInput, confirmInput].forEach(inp => inp.classList.remove('error'));
+            [nameError, emailError, passError, confirmError].forEach(div => div.style.display = 'none');
+
+            let isValid = true;
+
+            const showError = (input, msgDiv, text) => {
+                input.classList.add('error');
+                msgDiv.innerText = text;
+                msgDiv.style.display = 'block';
+                isValid = false;
+            };
+
+            if (nameInput.value.trim().length < 3) {
+                showError(nameInput, nameError, "Full Name must be at least 3 characters");
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value.trim())) {
+                showError(emailInput, emailError, "Please enter a valid email address");
+            }
+            if (passInput.value.length < 8) {
+                showError(passInput, passError, "Password must be at least 8 characters");
+            }
+
+            if (confirmInput.value !== passInput.value) {
+                showError(confirmInput, confirmError, "Passwords do not match");
+            } else if (!confirmInput.value) {
+                showError(confirmInput, confirmError, "Please confirm your password");
+            }
+
+            if (isValid) {
+                btn.innerText = "Creating Account...";
+                btn.style.opacity = "0.7";
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    alert("Account created successfully!");
+                    window.location.href = 'login.html';
+                }, 1500);
+            }
+        }
+    </script>
+</body>
+
+</html>

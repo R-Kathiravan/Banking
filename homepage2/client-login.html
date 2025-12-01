@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Access | Stackly Private</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body class="corp-body">
+    <header class="corp-header">
+        <div class="container header-inner">
+            <a href="index.html">
+                <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo">
+            </a>
+            <nav class="corp-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wealth.html">Wealth</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="lending.html">Lending</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="client-login.html" class="btn-corp-outline" style="color:var(--gold)">Client Login</a>
+            </div>
+
+            <div class="corp-hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+
+            <div class="corp-mobile-menu">
+                <div class="corp-close-btn">
+                    <span class="material-icons">close</span>
+                </div>
+
+                <ul class="corp-mobile-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wealth.html">Wealth</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="lending.html">Lending</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <a href="client-login.html" class="btn-corp-outline mobile-login-btn"
+                        style="color:var(--gold)">Client Login</a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="login-wrapper">
+
+        <div class="login-visual">
+            <div class="visual-content">
+                <!-- <a href="corporate.html" class="brand-logo" style="font-size:28px;"> -->
+                <!-- <span style="margin-right:10px;">🏛️</span> Stackly <span class="sub-brand">PRIVATE</span> -->
+                <!-- </a> -->
+            </div>
+            <div class="visual-content">
+                <p class="visual-quote">"Wealth is not just about accumulation. It is about preservation, legacy, and
+                    the freedom to pursue what matters most."</p>
+                <span class="visual-author">Alexander Sterling, Founder</span>
+            </div>
+        </div>
+
+        <div class="login-form-container">
+            <div class="login-box">
+                <div class="login-header">
+                    <h2>Client Access</h2>
+                    <p>Secure portal for wealth management clients.</p>
+                </div>
+
+                <form onsubmit="handleCorpLogin(event)">
+                    <div class="corp-input-group">
+                        <label>Client ID / Access Code</label>
+                        <input type="text" class="corp-input" placeholder="e.g. 8492-1029" required>
+                    </div>
+
+                    <div class="corp-input-group">
+                        <label>Password</label>
+                        <input type="password" class="corp-input" placeholder="••••••••••••" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <label style="display:flex; gap:5px; align-items:center; color:var(--text-light);">
+                            <input type="checkbox"> Remember device
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-corp" style="width:100%; text-align:center;">Secure Sign
+                        In</button>
+                </form>
+
+                <div class="secure-badge">
+                    <span>🔒 256-bit SSL Encryption</span>
+                </div>
+
+                <div style="text-align:center; margin-top:30px;">
+                    <a href="register.html" style="font-size:13px; color:var(--text-light);">← Register</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="corp-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="brand-col" data-aos="fade" data-aos-delay="100">
+                    <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo">
+                    <p style="text-indent: 25px;">SA • CBE • BAN • CHE</p>
+                    <div class="social-links">
+                        <a href="404page.html"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group" data-aos="fade" data-aos-delay="200">
+                    <h5>Expertise</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                        <li><a href="investment.html">Investment Banking</a></li>
+                        <li><a href="lending.html">Corporate Lending</a></li>
+                        <li><a href="insights.html">Market Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group" data-aos="fade" data-aos-delay="300">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="404Page.html">About Us</a></li>
+                        <li><a href="404Page.html">Careers</a></li>
+                        <li><a href="404Page.html">Investor Relations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group" data-aos="fade" data-aos-delay="400">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="404Page.html">Privacy Policy</a></li>
+                        <li><a href="404Page.html">Terms of Use</a></li>
+                        <li><a href="404Page.html">Regulatory Disclosures</a></li>
+                        <li><a href="contact.html">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>© 2025 Stackly Banking Group. All rights reserved. Member FDIC. Equal Housing Lender.</p>
+
+                    <p class="disclaimer">
+                        Investing involves risk, including the possible loss of principal. Past performance does not
+                        guarantee future results.
+                        Asset allocation and diversification do not ensure a profit or protect against loss.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true, duration: 800, easing: 'ease-out' });</script>
+    </script>
+    <script>
+        function handleCorpLogin(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+
+            btn.innerText = "Authenticating...";
+            btn.style.backgroundColor = "#0F172A";
+            btn.style.color = "white";
+            btn.style.borderColor = "#0F172A";
+
+            setTimeout(() => {
+                alert("Authentication Successful. Redirecting to Portfolio...");
+                window.location.href = "corporate.html";
+            }, 2000);
+        }
+    </script>
+
+</body>
+
+</html>

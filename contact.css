@@ -1,0 +1,120 @@
+  .help-hero {
+      background: #111827;
+      /* Dark BG for contrast */
+      color: white;
+      padding: 80px 0 120px;
+      text-align: center;
+  }
+
+  .help-hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+  }
+
+  .help-hero p {
+      color: #9CA3AF;
+      font-size: 18px;
+      margin-bottom: 30px;
+  }
+
+  .search-box {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+  }
+
+  .search-box input {
+      width: 100%;
+      padding: 18px 25px 18px 50px;
+      border-radius: 50px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .search-icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #9CA3AF;
+  }
+
+  /* Support Cards */
+  .support-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: -60px;
+      /* Overlap Hero */
+      position: relative;
+      z-index: 2;
+  }
+
+  .support-card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      border: 1px solid #E5E7EB;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+  }
+
+  .support-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+  }
+
+  .support-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      display: block;
+  }
+
+  .support-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  .support-card p {
+      color: #6B7280;
+      font-size: 15px;
+      margin-bottom: 20px;
+  }
+
+  .support-link {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+  }
+
+  /* Map Section */
+  .location-section {
+      padding: 100px 0;
+  }
+
+  .map-container {
+      height: 400px;
+      background: #F3F4F6;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9CA3AF;
+      font-weight: 500;
+  }
+
+  @media (max-width: 900px) {
+      .support-grid {
+          grid-template-columns: 1fr;
+          margin-top: 30px;
+      }
+
+      .help-hero {
+          padding-bottom: 50px;
+      }
+  } 

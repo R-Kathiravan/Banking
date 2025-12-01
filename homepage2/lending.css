@@ -1,0 +1,66 @@
+  .deal-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+  }
+
+  .deal-card {
+      background: white;
+      border: 1px solid #E2E8F0;
+      padding: 30px;
+      text-align: center;
+      transition: 0.3s;
+  }
+
+  .deal-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-5px);
+  }
+
+  .deal-amount {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      color: var(--navy);
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  .deal-type {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #64748B;
+      letter-spacing: 1px;
+  }
+
+  .deal-client {
+      margin-top: 15px;
+      font-weight: 600;
+      color: var(--navy);
+  }
+
+  .process-step {
+      flex: 1;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+  }
+
+  .step-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--navy);
+      color: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 24px;
+  }
+
+  @media (max-width: 900px) {
+      .deal-grid {
+          grid-template-columns: 1fr 1fr;
+      }
+  }
