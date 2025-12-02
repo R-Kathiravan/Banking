@@ -60,10 +60,23 @@
      gap: 30px;
      margin-top: 40px;
  }
+
  @media (max-width:678px) {
-    .analyst-row{
-        flex-direction: column;
-    }
+     .analyst-row {
+         flex-direction: column;
+     }
+
+     .news-input {
+         width: 250px;
+     }
+
+     #newsletterForm {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         align-items: center;
+         justify-content: center;
+     }
  }
 
  .analyst-card {
